@@ -1,0 +1,415 @@
+/* Add your CSS styles here */
+
+:root {
+    --text-black: #151515d6;
+    --text-white: #F6F5F5;
+    --light-blue: #2A629A;
+    --black-bg: #222831;
+    --body-bg: #f2f2f2;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg);
+    font-size: 16px;
+    color: var(--text-black);
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h1,
+h2 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+.main {
+    min-height: 90vh;
+    max-width: 1280px;
+    margin: auto;
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+header .header-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-details .person-info .candid-names {
+    color: var(--text-black);
+}
+
+header .header-details .person-info .candid-names p.username {
+    margin-bottom: 5px;
+    font-size: 38px;
+}
+
+header .header-details .person-info .candid-names p.designation {
+    font-weight: 600;
+}
+
+header .header-details .person-info .candid-experience {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+header .header-details .person-info .candid-experience .experience {
+    background: var(--black-bg);
+    padding: 0px 30px 0px 0px;
+    color: var(--text-white);
+}
+
+header .header-details .person-info .candid-experience .experience.projects-completed {
+    margin-left: 20px;
+}
+
+header .header-details .person-info .candid-experience .experience span.num-of-exp {
+    background: var(--light-blue);
+    padding: 10px 18px;
+    border-right: 2px solid var(--text-white);
+    margin-right: 15px;
+    min-width: 70px;
+    text-align: center;
+    display: inline-block;
+}
+
+header .header-details .person-img {
+    height: 165px;
+    width: 165px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header .header-details .person-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+::selection {
+    background-color: var(--light-blue);
+    color: var(--text-white);
+}
+
+.body-content {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    line-height: 1.4;
+}
+
+.body-content .container-block.row {
+    width: 100%;
+    flex: 1;
+}
+
+.body-content label {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.body-content .lef-col {
+    height: 100%;
+    position: sticky;
+    top: 0;
+    padding-right: 36px;
+    border-right: 1px solid #2228311c;
+}
+
+.sec-block label {
+    margin-bottom: 14px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.sec-block.contact .contact-links {
+    display: flex;
+    align-items: center;
+}
+
+.sec-block.contact .contact-links .inline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.sec-block.contact .contact-links .inline-icon i {
+    color: var(--text-black);
+}
+
+.sec-block.contact .contact-links a:hover .inline-icon i {
+    color: var(--light-blue) !important;
+}
+
+.sec-block.contact .contact-links .inline-icon img {
+    max-width: 20px;
+    margin-right: 14px;
+}
+
+.sec-block.certifications div.detail {
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    margin-bottom: 10px;
+}
+
+.block-border {
+    border-bottom: 1px solid #2228311c;
+    padding-bottom: 16px;
+    margin-bottom: 25px;
+}
+
+.skills ul {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.right-col {
+    padding-left: 35px;
+}
+
+.right-col .content-block {
+    margin-bottom: 36px;
+}
+
+.right-col .content-block p {
+    text-align: justify;
+}
+
+.right-col .content-block label {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.right-col .content-block label .inline-icon {
+    background-color: var(--light-blue);
+    padding: 6px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-right: 16px;
+}
+
+.right-col .content-block .detail:not(:last-child) {
+    margin-bottom: 25px;
+    /* padding-bottom: 25px; */
+    border-bottom: 1px solid #2228311c;
+}
+
+.right-col .content-block .detail p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.right-col .content-block .detail .past-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right-col .content-block .detail .past-details .company-name p.bold {
+    margin-bottom: 4px;
+}
+
+.right-col .content-block .detail ul {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.right-col .content-block .detail ul li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.right-col .content-block .detail .duration {
+    white-space: nowrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    header .header-details {
+        flex-direction: column-reverse;
+        grid-gap: 20px;
+        text-align: center;
+    }
+
+    header .header-details .person-info .candid-names p.username {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .candid-experience {
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    header .header-details .person-info .candid-experience .experience.projects-completed {
+        margin: 0;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .col-4 {
+        width: 100%;
+        flex: none;
+        position: relative;
+    }
+
+    .col-8 {
+        width: 100%;
+        flex: none;
+    }
+
+    .right-col {
+        padding: 0;
+    }
+
+    .body-content .lef-col {
+        padding: 0;
+        border: 0;
+    }
+
+    .right-col .content-block .detail .past-details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 0 15px;
+    }
+
+    .right-col .content-block .detail:not(:last-child) {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .sec-block label {
+        font-size: 20px;
+    }
+
+    header .header-details .person-info .candid-experience .experience,
+    header .header-details .person-info .candid-experience .experience.projects-completed {
+        max-width: fit-content;
+        margin: auto;
+    }
+
+    .mobile-contact {
+        margin: 30px 0px 0px;
+        display: block !important;
+    }
+
+    .block-border.sec-block.contact {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        margin: 0
+    }
+
+    img {
+        margin: 0;
+        margin-bottom: -40px
+    }
+
+    div#resume {
+        width: 320px;
+        padding: 12px;
+        overflow: hidden
+    }
+
+}
+
+.mobile-contact {
+    display: none;
+}
